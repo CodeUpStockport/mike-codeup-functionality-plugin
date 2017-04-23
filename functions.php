@@ -1,7 +1,12 @@
 <?php
 /*
  * Plugin Name: code-up functions
- * GitHub Plugin URI: https://github.com/CodeUpStockport/mike-codeup-functionality-plugin
+ * Description: Sample working functionaltiy plugin
+ * Plugin URI: https://zed1.com/
+ * Author URI: https://mikelittle.org/
+ * Plugin Author: Mike Little
+ * Version: 1.0.3
+ * License: LGPLv2
 */
 
 /* Add a filter to the post or page title to turn it into uppercase */
