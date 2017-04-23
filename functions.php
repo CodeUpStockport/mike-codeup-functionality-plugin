@@ -1,6 +1,7 @@
 <?php
 /*
  * Plugin Name: code-up functions
+ * GitHub Plugin URI: https://github.com/CodeUpStockport/mike-codeup-functionality-plugin
 */
 
 /* Add a filter to the post or page title to turn it into uppercase */
