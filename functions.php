@@ -16,7 +16,7 @@ function my_title_filter( $title ) {
 /* turn off WordPress' own make paragraph tags function */
 //remove_filter( 'the_content', 'wpautop' );
 
-/* Add Some addiktional CSS to the html head on the page */
+/* Add Some additional CSS to the html head on the page */
 add_action( 'wp_head', 'my_head_action', 99 );
 function my_head_action() {
 	echo '<style>
