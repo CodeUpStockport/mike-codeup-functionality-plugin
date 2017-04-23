@@ -3,9 +3,9 @@
  * Plugin Name: code-up functions
  * Description: Sample working functionaltiy plugin
  * Plugin URI: https://zed1.com/
+ * Author: Mike Little
  * Author URI: https://mikelittle.org/
- * Plugin Author: Mike Little
- * Version: 1.0.3
+ * Version: 1.0.4
  * License: LGPLv2
 */
 
