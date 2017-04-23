@@ -5,9 +5,9 @@
  * Plugin URI: https://zed1.com/
  * Author: Mike Little
  * Author URI: https://mikelittle.org/
- * Version: 1.0.4
+ * Version: 1.0.5
  * License: LGPLv2
-*/
+ */
 
 /* Add a filter to the post or page title to turn it into uppercase */
 add_filter( 'the_title', 'my_title_filter' );
