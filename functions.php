@@ -1,16 +1,17 @@
 <?php
-/*
- * Plugin Name: code-up functions
- * Description: Sample working functionality plugin
- * Plugin URI: https://zed1.com/
- * Author: Mike Little
- * Author URI: https://mikelittle.org/
- * Version: 1.0.7
- * GitHub Plugin URI: https://github.com/CodeUpStockport/mike-codeup-functionality-plugin
- * License: LGPLv2
- */
+  /*
+   * Plugin Name: code-up functions
+   * Description: Sample working functionality plugin
+   * Plugin URI: https://zed1.com/
+   * Author: Mike Little
+   * Author URI: https://mikelittle.org/
+   * Version: 1.0.6
+   * GitHub Plugin URI: https://github.com/CodeUpStockport/mike-codeup-functionality-plugin
+   * License: LGPLv2
+   */
 
-/* Add a filter to the post or page title to turn it into uppercase */
+
+   /* Add a filter to the post or page title to turn it into uppercase */
 add_filter( 'the_title', 'my_title_filter' );
 function my_title_filter( $title ) {
 	if ( is_admin() ) {
@@ -28,10 +29,10 @@ function my_head_action() {
 	echo '<style>
 	.post-subtitle {
 		font-size: 150%;
-		font-weight: bold;
-		text-align: center;
-		margin-bottom: 1em;}
-	</style>';
+			font-weight: bold;
+				text-align: center;
+					margin-bottom: 1em;}
+					</style>';
 
 }
 
@@ -47,4 +48,19 @@ function add_post_subtitle( $content ) {
 		}
 	}
 	return $content;
+}
+
+/* Add filter to retrieve page colour */
+add_filter( 'body_class', 'add_page_colour', 10, 2 );
+function add_page_colour( $classes, $class ) {
+
+	if ( function_exists( 'get_field' ) ) {
+		$page_class = get_field( 'page_colour' );
+		if ( ! 0 == $page_class ) {
+			$classes[] = $page_class;
+			return $classes;
+		}
+	}
+
+	return $classes;
 }
