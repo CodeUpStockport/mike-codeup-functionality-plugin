@@ -5,7 +5,7 @@
  * Plugin URI: https://zed1.com/
  * Author: Mike Little
  * Author URI: https://mikelittle.org/
- * Version: 1.0.5
+ * Version: 1.0.7
  * GitHub Plugin URI: https://github.com/CodeUpStockport/mike-codeup-functionality-plugin
  * License: LGPLv2
  */
