@@ -1,11 +1,12 @@
 <?php
 /*
  * Plugin Name: code-up functions
- * Description: Sample working functionaltiy plugin
+ * Description: Sample working functionality plugin
  * Plugin URI: https://zed1.com/
  * Author: Mike Little
  * Author URI: https://mikelittle.org/
  * Version: 1.0.5
+ * GitHub Plugin URI: https://github.com/CodeUpStockport/mike-codeup-functionality-plugin
  * License: LGPLv2
  */
 
