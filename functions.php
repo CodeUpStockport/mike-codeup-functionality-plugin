@@ -15,10 +15,11 @@
 add_filter( 'the_title', 'my_title_filter' );
 function my_title_filter( $title ) {
 
-	if ( is_admin() ) {
-		return $title;
-	}
-	return strtoupper( $title );
+    if ( is_main_query() && ! is_admin() ) {
+        return strtoupper( $title );
+    }
+    
+    return $title;
 
 }
 
