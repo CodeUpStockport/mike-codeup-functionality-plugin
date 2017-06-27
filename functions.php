@@ -15,7 +15,7 @@
 add_filter( 'the_title', 'my_title_filter' );
 function my_title_filter( $title ) {
 
-    if ( is_main_query() && ! is_admin() ) {
+    if ( in_the_loop() && is_main_query() ) {
         return strtoupper( $title );
     }
     
@@ -38,6 +38,25 @@ function my_head_action() {
 		text-align: center;
 		margin-bottom: 1em;
 	}
+
+    body.page-blue {
+        background-color: #007acc;
+    }
+    body.page-red {
+        background-color: #ff0000;
+    }
+    body.page-green {
+        background-color: #009900;
+    }
+    body.page-purple {
+        background-color: #800080;
+    }
+    body.page-khaki {
+        background-color: #999966;
+    }
+    body.page-yellow {
+        background-color: #ffff00;
+    }
 </style>';
 
 }
