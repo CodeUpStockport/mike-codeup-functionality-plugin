@@ -232,3 +232,10 @@ add_action( 'widgets_init', 'zed1_register_zcp_widget' );
 function zed1_register_zcp_widget() {
 	register_widget( 'zed1_child_pages_widget' );
 } // end zed1_register_zcp_widget
+
+
+add_filter( 'gallery_custom_links_classes', 'my_gallery_custom_links_classes', 25 );
+function my_gallery_custom_links_classes( $classes ) {
+	zed1_debug('classes=', $classes );
+	return [ '.gallery-links' ];
+}
